@@ -1,0 +1,67 @@
+Ryan Than
+CSCI4229 - Fall 2020 - Final Project
+
+This project is a 3D recreation of the town Onett from the 1995 role-playing game Earthbound.
+
+Notes:
+  - The program can be run simply by compiling with make and executing the file with .\final.exe
+  - Time spent on this project so far: 65+ hours
+  - Please look at the provided onett.png to see the original reference.
+  - The entire town can be examined from orthogonal/perspective views.
+        - For a closer look at the details on each object, the town can be fully explored in first person or viewed by separate sections.
+  - Almost every object in the scene has been meticulously converted from 2D sprites to 3D, textured (over 100 textures in total), and detailed by hand.
+  - Many objects (cars, buildings, houses, etc.) have different colors, textures, and other unique details.
+  - Several transparent textures such as plants, flowers, and weathervanes serve to add more detail to the scene.
+  - The addition of a skybox adds immersion to the scene.
+  - Some of the cars in the town drive around the streets on their own.
+
+Code Reuse and References:
+  - Any functions reused from previous homeworks or class examples are noted in the code comments.
+  - To create a hollow hemisphere, I referred to this website: https://users.cs.jmu.edu/bernstdh/web/common/lectures/summary_opengl-texture-mapping.php
+    and this website: https://www.khronos.org/registry/OpenGL-Refpages/gl2.1/xhtml/glClipPlane.xml
+  - I got almost all of my textures from: https://www.textures.com/ and got the texture for my skybox from: https://www.humus.name/index.php?page=Textures&start=0
+  - I got help with the image transparency from Professor Schreuder and the lecture example shown on November 12.
+
+---------------------------------------------------------------------------------------------
+View Specific Key Bindings:
+
+Orthogonal/Perspective:
+  arrows      Change view angle
+  PGUP/PGDN   Zoom in/out
+  +/-         Increase/decrease the field of view angle (Perspective ONLY)
+  a/A         Decrease/increase ambient light
+  s/S         Decrease/increase specular light
+  d/D         Decrease/increase diffuse light
+  e/E         Decrease/increase emitted light
+  n/N         Decrease/increase shininess
+  F1          Toggle smooth/flat shading
+  F2          Toggle local viewer mode
+  F3          Decrease light distance from center (minimum of 5)
+  F4	        Increase light distance from center (maximum of 50)
+  F5          Change ball increment
+  m           Toggles light movement
+  </>	        Manually move light clockwise/counterclockwise when paused
+  []          Lower/raise light elevation
+
+First-Person:
+  ↑/↓         Move forward/backwards
+  ←/→	        Look left/right
+  1           Go to the North part of the city
+  2           Go to the East part of the city
+  3           Go to the South part of the city
+  4           Go to the West part of the city
+
+---------------------------------------------------------------------------------------------
+Global Instructions:
+
+  f           Show the full city
+  o           Cycle through city sections
+  0	          Reset to original view
+  9           Set to overhead view
+  x           Toggle axes
+  b           Toggle skybox
+  l           Toggle lighting
+  p           Toggles between:
+                - City Sections: Orthogonal/Perspective
+                - Full City: Orthogonal/Perspective/First Person
+  ESC         Exit
